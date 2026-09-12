@@ -8,9 +8,11 @@ class Solution {
 
             int mid = start + (end - start) / 2;
 
-            if(mid * mid == x) {
+            long square = (long) mid * mid;
+
+            if(square == x) {
                 return mid;
-            } else if (mid * mid < x) {
+            } else if (square < x) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
