@@ -11,9 +11,9 @@ class Solution {
             if(square == num) {
                 return true;
             } else if (square < num) {
-                start = mid + 1;
+                start = mid + 1; // mid is small move right
             } else {
-                end = mid - 1;
+                end = mid - 1; // mid is big move left
             }
         }
         return false;
